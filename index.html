@@ -13,6 +13,7 @@
 	<title>Document</title>
 </head>
 <body>
+	
 		<header class="page-header">
 		<div class="container-header-nav">
 		 <nav class="flexible"><a class="logo" href="./index.html">Web<span class="black-logo">Studio</span></a>
@@ -42,6 +43,44 @@
 			<button type="button" class="blue-button" data-modal-open>Замовити послугу</button>
 	<div class="backdrop is-hidden" data-modal>
 		<div class="modal">
+			<p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
+			<form class="form">
+				<div class="form-field">
+					<label for="name">Ім'я</label>
+					<input type="text" id="name" placeholder="Василий Пупкин">
+					<svg width="12px" height="12px" class="form-icon">
+						<use href="./images/sprite.svg#icon-name"></use>
+					</svg>
+				</div>
+				<div class="form-field">
+					<label for="tel">Телефон</label>
+					<input type="tel" id="tel" placeholder="+38093">
+					<svg width="13px" height="13px" class="form-icon">
+						<use href="./images/sprite.svg#icon-telnumber"></use>
+					</svg>
+				</div>
+				<div class="form-field">
+					<label for="mail">Пошта</label>
+					<input type="mail" id="tel">
+					<svg width="15px" height="12px" class="form-icon">
+						<use href="./images/sprite.svg#icon-form-letter"></use>
+					</svg>
+				</div>
+				<div class="form-field">
+					<label for="comment">Коментар:</label>
+					<textarea name="vomment" id="comment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+				</div>
+				<div>
+						
+						<label for="check" class="checkbox-field">
+							<input class="checkbox" type="checkbox" name="checkbox" id="check">
+							<span class="icon"></span>
+							<p class="form-text">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></p>
+						</label>
+				</div>
+				<button type="button" class="blue-button">Відправити</button>
+			</form>
+
 			<button class="button-closed" data-modal-close>
 				<svg width="11px" height="11px">
 					<use href="./images/sprite.svg#icon-close"></use>
@@ -360,7 +399,24 @@
 					</a>
 				</li>
 			</ul>
-	</div>
+		</div>
+		<div class="footer-form">
+			<form name="footer-email">
+				<p class="footer-p">Підпишіться на розсилку</p>
+					<div class="footer-email">
+						<label for="footer-email">
+							<input class="footer-form-email" type="footer-email" placeholder="E-mail">
+						</label>
+						<button type="button" class="footer-button-form">Підписатися
+							<div class="icon-send">
+								<svg class="icon-send-spite" width="24px" height="24px">
+									<use href="./images/sprite.svg#icon-send"></use>
+								</svg>
+							</div>
+						</button>
+					</div>
+			</form>
+		</div>
  </div>
 	
 </footer>
