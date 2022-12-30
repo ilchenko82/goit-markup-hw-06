@@ -77,8 +77,6 @@ ul {
 .form-title {
   display: inline-block;
 
-  padding-top: 40px;
-
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -94,6 +92,8 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  padding: 40px;
 
   background-color: #fff;
 
@@ -151,9 +151,8 @@ ul {
   display: block;
   width: 440px;
   margin-top: 12px;
-  margin-left: 40px;
-  margin-right: 40px;
 }
+
 .form-field label {
   margin-bottom: 4px;
 }
@@ -986,23 +985,31 @@ ul {
 }
 
 .footer-form {
-  display: flex;
+/*   display: flex;
   justify-content: flex-start;
-  gap: 12px;
+  gap: 12px; */
   margin-left: 93px;
 }
 .footer-email {
   display: flex;
-  align-items: flex-end;
+  align-items:flex-start;
   gap: 12px;
 
   margin-top: 20px;
 }
 
+/* .footer-email:first-child {
+	display: flex;
+	align-items:flex-start;
+	gap: 12px;
+ 
+	margin-top: 20px;
+ } */
+
 .footer-form-email {
   display: inline-block;
 
-  padding: 15px 0px 15px 16px;
+  padding: 12px 0px 15px 16px;
 
   width: 358px;
   height: 50px;
